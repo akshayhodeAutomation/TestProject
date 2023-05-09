@@ -7,153 +7,77 @@ public class hashMap {
 	
 	public static void main(String[] args) {
 		
-//		HAshmap();
-//		mapvstable();
-//		hashMap();
-//		hashTable();
-		p1();
-		p2();
+		HAshmap();
+		hashTable();
+		
 		
 	}
 	
 	static public void HAshmap()
 	{
-    	HashMap h=new HashMap();
-	
-	    h.put("name", "akshay");
-	    h.put("gender", "male");
-	    h.put("mail", "aks@g12.gmsil.com");
-	    
-	    int count=h.size();
-	    System.out.println(count);
-	    
-	    
-	   System.out.println(h);
-	   
-    	h.values();
-	   
-	   System.out.println(h);
-	
-	   boolean status=h.isEmpty();
-	   
-	   System.out.println(status);
+    	HashMap hm=new HashMap();
+    	hm.put(1, 10);
+    	hm.put(2, 20);
+    	hm.put(5, 30);
+    	hm.put(4, 40);
+    	hm.put(null, 100);
+    	hm.put(null, 200);
+    	hm.put(5, null);
+    	hm.put(3, null);
+    	hm.put(1, 100);
+    	hm.put(10, 30);
+    	
+    	System.out.println(hm);
+    	
+    	
+    	HashMap<String, String> shm=new HashMap<String , String>();
+    	
+    	shm.put("A", "akshay");
+    	shm.put("B", "stan");
+    	shm.put("c", "shiv");
+    	shm.put("E", "nimrit");
+    	shm.put("D", "sumbhul");
+    	
+    	System.out.println(shm);
+    	
+    	
+    	HashMap <Integer , String> is=new HashMap<Integer , String>();
+    	is.put(1, "A");
+    	is.put(2, "B");
+    	is.put(5, "C");
+    	is.put(3, "X");
+    	is.put(4, "Y");
+    	is.put(null, "Z");
+    	
+    	System.out.println(is);
+    	
+    	
 	}
 	
-	
-	static void mapvstable()
+	static public void hashTable()
 	{
-		HashMap h=new HashMap();
-		h.put(0, 10);
-		h.put(1, 20);
-		h.put(3, 30);
-		h.put(4, 40);
-		h.put(5, 50);
-		h.put(0, 60);
-		h.put(1, 100);
-		h.put(10, 200);
-		h.put(null, 300);
-		h.put(null, 250);
-		
-		
-		System.out.println(h);
-		try
-		{
-		Hashtable t=new Hashtable();
-		t.put(0, 10);
-		t.put(null, 20);
-		
-		System.out.println(t);
-		}
-		catch(Exception e)
-		{
-			System.out.println("continue");
-		}
-	}
+		Hashtable ht=new Hashtable();
+		ht.put(1, 10);
+		ht.put(3, 20);
+		ht.put(2, 30);
+		ht.put(4, 40);
+		ht.put(8, 80);
+		ht.put(6, 60);
+		ht.put(6, 600);
 	
-	static void hashMap()
-	{
-		HashMap<String, Integer> h=new HashMap<String,Integer>();
 		
-		h.put("ak", 100);
-		h.put("stan", 100);
-		h.put(null, 200);
-		h.put(null, 300);
-		h.put("tan", 0);
-		h.put("cat", 0);
-		h.put(null, null);
+		System.out.println(ht);
 		
+		Hashtable <String , Integer> sht=new Hashtable();
+		sht.put("X", 10);
+		sht.put("D", 20);
+		sht.put("G", 40);
+		sht.put("F", 50);
 		
-		
-		System.out.println(h);
-	}
-	static void hashTable()
-	{
-		Hashtable<String,Integer> h=new Hashtable<String,Integer>();
-		
-	
-		h.put("tan", 100);
-		h.put("satn", 200);
-		h.put("stan", 300);
-//		h.put(null, null);
-//		h.put("ak", null);
-		
-		System.out.println(h);
-		
-		System.out.println(h.get("tan"));
-		System.out.println(h.get("stan"));
+		System.out.println(sht);
 		
 		
 	}
 	
-	static public void p1()
-	{
-		HashMap map=new HashMap();
-		map.put("name", "akshay");
-		map.put(null, "2");                  // We can stored only one null key in hashmap
-		map.put("age", "23");
-		map.put(null, "testing");
-		map.put("class", "A1");
-		
-		System.out.println(map);
-		
-		HashMap mp=new HashMap();
-		mp.put("name", "stan");
-		mp.put(null, "123");
-		mp.put("age", "31");
-		mp.put("1","25");
-		mp.put("2", null);
-		mp.put("3", null);
-		mp.put("4", null);
-		mp.put(null, "987");
-		
-		System.out.println(mp);
-	}
-	
-	static void p2()
-	{
-		Hashtable table=new Hashtable();
-		table.put("1", "10");
-		table.put("2", "20");
-		table.put("3", "30");
-		table.put("name", "stan");
-		table.put("age", "23");
-		table.put("0", "50");
-		table.put("4", "  ");
-		//table.put("5", null);
-		
-		System.out.println("p2 :"+table);
-		
-		
-		Hashtable<Integer,Integer> tb=new Hashtable();
-		
-		
-		tb.put(1, 123);
-		tb.put(2, 25);
-		tb.put(3, 35);
-		
-		System.out.println(tb);
-		
-		
-	}
 
 }
